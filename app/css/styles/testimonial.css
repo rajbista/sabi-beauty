@@ -1,0 +1,25 @@
+/* Testimonial */
+.testimonial {
+    padding: 1px;
+}
+.testimonial__image-container {
+    position: relative;
+}
+.testimonial__image {
+    width: 100%;
+}
+.testimonial__icon {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote,
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+    .testimonial .quote {
+        margin-left: 6rem;
+    }
+}

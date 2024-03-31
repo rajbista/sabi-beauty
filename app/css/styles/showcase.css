@@ -1,0 +1,13 @@
+/* Showcase */
+.showcase {
+    gap: 4rem 2rem;
+}
+.showcase__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .showcase .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

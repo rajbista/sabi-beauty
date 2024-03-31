@@ -1,0 +1,42 @@
+@import "./styles/typography.css";
+@import "./styles/links.css";
+@import "./styles/badges.css";
+/* @import "./styles/lists.css"; */
+@import "./styles/icons.css";
+@import "./styles/buttons.css";
+@import "./styles/inputs.css";
+@import "./styles/cards.css";
+@import "./styles/plans.css";
+@import "./styles/media.css";
+@import "./styles/quotes.css";
+@import "./styles/girds.css";
+@import "./styles/testimonial.css";
+@import "./styles/callout.css";
+@import "./styles/collapsible.css";
+@import "./styles/blocks.css";
+@import "./styles/navigation.css";
+@import "./styles/hero.css";
+@import "./styles/feature.css";
+@import "./styles/showcase.css";
+@import "./styles/slideshow.css";
+@import "./styles/footer.css";
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-heading: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  --background-footer: #232323;
+  --color-footer-heading: #d2d0db;
+}

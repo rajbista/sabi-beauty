@@ -1,0 +1,13 @@
+/* Media */
+.media {
+    display: flex;
+}
+.media__body {
+    margin: 0 1rem;
+}
+.media__image {
+    margin-top: -1px;
+}
+.media__title {
+    margin-top: 0;
+}

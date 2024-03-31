@@ -1,0 +1,49 @@
+/* Badges */
+.badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+.badge--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.badge--small{
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.badge--medium{
+    font-size: 2.6rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.badge--secondary .card__header {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.badge--secondary .badge--secondary {
+    background: #02cdf1;
+}
+@media screen and (min-width: 1024px){
+    .badge {
+        font-size: 1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .badge--medium{
+        font-size: 2.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
