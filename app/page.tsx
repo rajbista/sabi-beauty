@@ -1,9 +1,6 @@
 import React from "react";
+import Service from "./service/page";
 
 export default function page() {
-  return (
-    <div>
-      <h1>Services</h1>
-    </div>
-  );
+  return <Service />;
 }
