@@ -23,7 +23,7 @@ const Testimonail = () => {
     // },
   ];
   return (
-    <section className="block">
+    <section className="container block">
       <header className="block__header" data-aos="fade-up">
         <h1>TESTIMONIAL</h1>
       </header>

@@ -11,13 +11,13 @@ interface Props {
 const ServiceCard = ({ title, icon, content, picture }: Props) => {
   const imageSrc = `/${picture}`;
   return (
-    <article className="grid grid--1x2 feature">
-      <div className="feature__content" data-aos="fade-right">
+    <section className="grid grid--1x2 feature">
+      <article className="feature__content" data-aos="fade-right">
         {icon && <Icon name={icon} />}
         <h2 className="content--heading">{title}</h2>
         <p className="content__tagline">{content}</p>
         <Link color={""} size={""} link={""} label={"Learn More"} />
-      </div>
+      </article>
       <picture data-aos="zoom-in-left">
         {picture && (
           <picture>
@@ -25,7 +25,7 @@ const ServiceCard = ({ title, icon, content, picture }: Props) => {
           </picture>
         )}
       </picture>
-    </article>
+    </section>
   );
 };
 

@@ -52,7 +52,7 @@ const Service = () => {
     },
   ];
   return (
-    <section className="services">
+    <section className="container services">
       <h1>OUR SERVICES</h1>
 
       {data.map((item, index) => (

@@ -2,6 +2,7 @@
 
 .footer {
     background: var(--background-footer);
+    padding: 1rem;
 }
 .footer a {
     color: #777;
@@ -12,13 +13,13 @@
 
 }
 .footer__section {
-    padding: 2rem;
+    padding: 1rem;
     border-bottom: 1px solid #393939;
     width: 100%;
 }
 
 .footer__section .list {
-    margin: 0;
+    margin: 1rem;
 }
 .footer__heading {
     color: var(--color-footer-heading);

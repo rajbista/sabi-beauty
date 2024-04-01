@@ -23,26 +23,24 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="block block-dark footer">
-      <div className="container grid footer__sections">
-        <FooterItem
-          title="Contact Us"
-          icon="chevron"
-          content={contact}
-          expanded={true}
-        />
-        <FooterItem
-          title="Business Hour"
-          icon="chevron"
-          content={businessHours}
-        />
-        <FooterItem title="Follow Us" icon="chevron" content={followUs} />
+    <footer className="footer grid footer__sections">
+      <FooterItem
+        title="Contact Us"
+        icon="chevron"
+        content={contact}
+        expanded={true}
+      />
+      <FooterItem
+        title="Business Hour"
+        icon="chevron"
+        content={businessHours}
+      />
+      <FooterItem title="Follow Us" icon="chevron" content={followUs} />
 
-        <section className="collapsible__footer footer__brand">
-          <Image src="/sabi.png" alt="Logo" width={180} height={40} priority />
-          <p className="footer__copyright">Copyright &copy;</p>
-        </section>
-      </div>
+      <section className="collapsible__footer footer__brand">
+        <Image src="/sabi.png" alt="Logo" width={180} height={40} priority />
+        <p className="footer__copyright">Copyright &copy;</p>
+      </section>
     </footer>
   );
 };

@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 
 const NavBar = () => {
-  let [style, setStyle] = useState("nav collapsible");
-  const currentPath = usePathname();
+  let [isCollapse, setCollapse] = useState(true);
 
   const links = [
     { label: "Our Services", href: "/" },
@@ -15,24 +13,18 @@ const NavBar = () => {
     { label: "Contact Us", href: "/contact" },
   ];
 
-  const handleChevronClick = () => {
-    style === "nav collapsible"
-      ? setStyle("nav collapsible expanded")
-      : setStyle("nav collapsible");
-  };
-
-  const onMenuClick = (e: string) => {
-    console.log("________ Menu clicked", e);
-  };
+  const onMenuClick = (e: string) => {};
 
   return (
-    <nav className={style}>
+    <nav
+      className={isCollapse ? "nav collapsible" : "nav collapsible expanded"}
+    >
       <Link href="/">
         <Image src="/sabi.png" alt="Logo" width={175} height={45} priority />
       </Link>
 
-      <div className="nav__toggle" onClick={handleChevronClick}>
-        {style === "nav collapsible" ? (
+      <div className="nav__toggle" onClick={() => setCollapse(!isCollapse)}>
+        {isCollapse ? (
           <MdMenu color="white" size="40" />
         ) : (
           <MdClose color="white" size="40" />
