@@ -24,6 +24,7 @@ const NavBar = () => {
   const onMenuClick = (e: string) => {
     console.log("________ Menu clicked", e);
   };
+
   return (
     <nav className={style}>
       <Link href="/">
