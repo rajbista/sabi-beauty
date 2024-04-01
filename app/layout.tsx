@@ -20,6 +20,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.sabibrowandbeauty.com/"></link>
+      <title>
+        SABI Brow & Beauty - Beauty Salon in Aurora, Naperville, Plainfield,
+        Oswego
+      </title>
+      <meta
+        name="description"
+        content="Beauty Salon offering Eyebrow Threading, Waxing, Hair Removal, Eyelashes, Facial, Henna in Aurora, Naperville, Illinois. Affordable beauty services."
+      />
+      <meta
+        property="og:title"
+        content="Beauty Salon for Eyebrow Threading, Waxing, Hair removal, Eyelashes, Facial, Henna"
+      />
+      <meta
+        property="og:description"
+        content="Beauty Salon | Eyebrow Threading | Waxing | Hair removal | Eyelashes | Facial | Henna in Aurora, Naperville, Illinois"
+      />
+      <meta property="og:type" content="Website" />
+      <meta property="og:image" content="assets/logo.png" />
+      <meta property="og:url" content="http://sabibrowandbeauty.com" />
       <body>
         <NavBar />
         <main>{children}</main>
