@@ -4,7 +4,8 @@ const Testimonail = () => {
   const data = [
     {
       author: "Raj Bista",
-      content: `Had an amazing underarm waxing experience at SABI Brow & Beauty today! The staff was friendly, the service was thorough and virtually painless. The salon is clean and inviting. I'm really happy with the results and will definitely be back for more services. Highly recommend! ⭐⭐⭐⭐⭐`,
+      content:
+        "Had an underarm waxing at SABI Brow & Beauty today. The salon is clean and inviting, and staff are friendly. I'm really happy with the service and will definitely be back for more services. Highly recommend!!",
     },
     // {
     //   author: "Zareen Skoien",
