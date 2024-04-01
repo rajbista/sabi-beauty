@@ -1,7 +1,7 @@
 @import "./styles/typography.css";
 @import "./styles/links.css";
 @import "./styles/badges.css";
-/* @import "./styles/lists.css"; */
+@import "./styles/lists.css";
 @import "./styles/icons.css";
 @import "./styles/buttons.css";
 @import "./styles/inputs.css";
@@ -30,6 +30,7 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
+  
   --color-white: #fff;
   --color-black: #000;
   --color-heading: #1b0760;

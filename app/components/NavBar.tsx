@@ -1,17 +1,18 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { FaTasks } from "react-icons/fa";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const NavBar = () => {
   let [style, setStyle] = useState("nav collapsible");
   const currentPath = usePathname();
+
   const links = [
-    { label: "SERVICES", href: "/" },
-    { label: "MENU", href: "/menu" },
-    { label: "APPOINTMENT", href: "/appointment" },
-    { label: "CONTACT", href: "/contact" },
+    { label: "Our Services", href: "/service" },
+    { label: "Appointment", href: "/appointment" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   const handleChevronClick = () => {
@@ -19,22 +20,33 @@ const NavBar = () => {
       ? setStyle("nav collapsible expanded")
       : setStyle("nav collapsible");
   };
+
+  const onMenuClick = (e: string) => {
+    console.log("________ Menu clicked", e);
+  };
   return (
     <nav className={style}>
-      <Link href="/" className="nav__toggle" onClick={handleChevronClick}>
-        <FaTasks />
+      <Link href="/">
+        <Image src="/sabi.png" alt="Logo" width={175} height={45} priority />
       </Link>
-      <ul>
+
+      <div className="nav__toggle" onClick={handleChevronClick}>
+        {style === "nav collapsible" ? (
+          <MdMenu color="white" size="40" />
+        ) : (
+          <MdClose color="white" size="40" />
+        )}
+      </div>
+
+      <ul className="list nav__list collapsible__content">
         {links.map((link) => (
-          <Link
+          <li
             key={link.label}
-            href={link.href}
-            className={`${
-              link.href === currentPath ? "text-zinc-900" : "text-zinc-500"
-            } hover:text-zinc-800 transition-colors`}
+            className="nav__item"
+            onClick={() => onMenuClick(link.label)}
           >
-            {link.label}
-          </Link>
+            <Link href={link.href}>{link.label}</Link>
+          </li>
         ))}
       </ul>
     </nav>

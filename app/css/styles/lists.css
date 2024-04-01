@@ -9,7 +9,7 @@
     margin-right: 2rem;
 }
 .list--tick {
-    list-style-image: url(../tick.svg);
+    /* list-style-image: url(../../../assets/tick.svg); */
     padding-left: 3rem;
 }
 .list--tick .list__item {
