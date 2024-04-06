@@ -10,7 +10,7 @@ const Callout = () => {
               <a href="tel:331-385-8356" />
             </p>
           </div>
-          <a href="tel:331-385-8356" className="btn btn--accent btn--stretched">
+          <a href="tel:331-385-8356" className="btn btn--accent">
             Get Appointment
           </a>
         </div>

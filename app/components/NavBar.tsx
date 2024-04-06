@@ -8,12 +8,15 @@ const NavBar = () => {
   let [isCollapse, setCollapse] = useState(true);
 
   const links = [
-    { label: "Our Services", href: "/" },
+    { label: "Home", href: "/" },
     { label: "Appointment", href: "/appointment" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Offer", href: "/" },
+    { label: "Contact", href: "/contact" },
   ];
 
-  const onMenuClick = (e: string) => {};
+  const onMenuClick = (e: string) => {
+    setCollapse(true);
+  };
 
   return (
     <nav
@@ -38,7 +41,7 @@ const NavBar = () => {
             className="nav__item"
             onClick={() => onMenuClick(link.label)}
           >
-            <Link href={link.href}>{link.label}</Link>
+            <Link href={link.href}>{link.label.toUpperCase()}</Link>
           </li>
         ))}
       </ul>
