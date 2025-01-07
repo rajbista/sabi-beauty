@@ -60,7 +60,7 @@ const Service = () => {
   ];
   return (
     <section className="container services">
-      <h1>OUR SERVICES</h1>
+      {/* <h2>OUR SERVICES</h2> */}
 
       {data.map((item, index) => (
         <ServiceCard
