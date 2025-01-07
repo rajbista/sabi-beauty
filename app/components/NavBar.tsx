@@ -9,8 +9,8 @@ const NavBar = () => {
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "Appointment", href: "/" },
-    { label: "Offer", href: "/" },
+    // { label: "Appointment", href: "/" },
+    { label: "Gift Card", href: "/offer" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -23,7 +23,14 @@ const NavBar = () => {
       className={isCollapse ? "nav collapsible" : "nav collapsible expanded"}
     >
       <Link href="/">
-        <Image src="/sabi.png" alt="Logo" width={175} height={45} priority />
+        <Image
+          src="/sabi.png"
+          alt="Logo"
+          width={175}
+          height={45}
+          color="white"
+          priority
+        />
       </Link>
 
       <div className="nav__toggle" onClick={() => setCollapse(!isCollapse)}>
