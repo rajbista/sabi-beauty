@@ -14,7 +14,7 @@ const Footer = () => {
     { ref: "#", label: "MONDAY - SATURDAY" },
     { ref: "#", label: " 10 AM - 7 PM" },
     { ref: "#", label: "SUNDAY" },
-    { ref: "#", label: "CLOSED" },
+    { ref: "#", label: "11 AM - 5 PM" },
   ];
   const followUs = [
     { ref: "https://www.instagram.com/sabibrowandbeauty/", label: "InstaGram" },

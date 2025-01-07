@@ -17,6 +17,13 @@ const Service = () => {
   const data = [
     {
       icon: "easy",
+      title: "HAIR",
+      content:
+        "Our hair services for women include professional styling, cutting, and treatments tailored to your preferences. From trims to transformative makeovers, we ensure healthy, beautiful hair that enhances your look.",
+      picture: "hair.jpg",
+    },
+    {
+      icon: "easy",
       title: "THREADING",
       content:
         "Eyebrow threading is a traditional technique of eyebrow shaping and hair removal practiced for the centuries among the women of Asia and middle eastern countries. It is an alternative to waxing and tweezing, especially for sensitive skins.",
