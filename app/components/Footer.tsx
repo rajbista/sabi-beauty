@@ -38,7 +38,17 @@ const Footer = () => {
       <FooterItem title="Follow Us" icon="chevron" content={followUs} />
 
       <section className="collapsible__footer footer__brand">
-        <Image src="/sabi.png" alt="Logo" width={180} height={40} priority />
+        <Image
+          src="/sabi.png"
+          alt="Logo"
+          width={155}
+          height={45}
+          style={{
+            filter: "invert(100%) brightness(200%)",
+          }}
+          priority
+        />
+
         <p className="footer__copyright">Copyright &copy;</p>
       </section>
     </footer>

@@ -26,9 +26,12 @@ const NavBar = () => {
         <Image
           src="/sabi.png"
           alt="Logo"
-          width={175}
+          width={155}
           height={45}
-          color="white"
+          style={{
+            filter: "invert(100%) brightness(200%)",
+            margin: "5px",
+          }}
           priority
         />
       </Link>

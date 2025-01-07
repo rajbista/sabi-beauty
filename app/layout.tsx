@@ -27,7 +27,7 @@ export default function RootLayout({
       <link rel="icon" href="/sabi.png" />
       <title>
         SABI Brow & Beauty - Beauty Salon in Aurora, Naperville, Plainfield,
-        Oswego
+        Oswego, North Aurora, Montgomery, Yorkville.
       </title>
       <meta
         name="description"
@@ -48,7 +48,7 @@ export default function RootLayout({
         <NavBar />
         <main>
           {children}
-          <SpeedInsights />
+          {/* <SpeedInsights /> */}
         </main>
         <Footer />
       </body>
