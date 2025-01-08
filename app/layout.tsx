@@ -44,6 +44,10 @@ export default function RootLayout({
       <meta property="og:type" content="Website" />
       <meta property="og:image" content="/sabi.png" />
       <meta property="og:url" content="http://sabibrowandbeauty.com" />
+      <meta
+        name="google-site-verification"
+        content="IZpAWiDgWmWSrmdnJBYZEvLzQpG0zHaJuQJFCybmcXA"
+      />
       <body>
         <NavBar />
         <main>
